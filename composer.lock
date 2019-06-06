@@ -1,23 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "fa67e407b9c47a23ccf83d8495bb52e0",
     "packages": [
         {
             "name": "aristath/kirki",
-            "version": "v3.0.33",
+            "version": "v3.0.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aristath/kirki.git",
-                "reference": "d2ddc07158cd2e09bb1e3b057a9a98d52b8ec467"
+                "reference": "12271616dfc48a9f9681a92310d0fef1df5cebae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aristath/kirki/zipball/d2ddc07158cd2e09bb1e3b057a9a98d52b8ec467",
-                "reference": "d2ddc07158cd2e09bb1e3b057a9a98d52b8ec467",
+                "url": "https://api.github.com/repos/aristath/kirki/zipball/12271616dfc48a9f9681a92310d0fef1df5cebae",
+                "reference": "12271616dfc48a9f9681a92310d0fef1df5cebae",
                 "shasum": ""
             },
             "require": {
@@ -28,17 +28,16 @@
                 "composer/installers": "*",
                 "dealerdirect/phpcodesniffer-composer-installer": "*",
                 "php-coveralls/php-coveralls": "^2.0",
+                "phpcompatibility/phpcompatibility-wp": "*",
                 "phpunit/phpunit": "*",
-                "wimg/php-compatibility": "*",
                 "wp-coding-standards/wpcs": "*"
             },
             "type": "library",
-            "autoload": {
-                "files": [
-                    "kirki.php"
-                ]
-            },
             "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                ".",
+                "core"
+            ],
             "license": [
                 "MIT"
             ],
@@ -48,12 +47,6 @@
                     "email": "aristath@gmail.com",
                     "homepage": "https://aristath.github.io",
                     "role": "Developer"
-                },
-                {
-                    "name": "fovoc",
-                    "email": "kalliris.d@gmail.com",
-                    "homepage": "https://github.com/fovoc",
-                    "role": "Developer"
                 }
             ],
             "description": "Extending the WordPress customizer",
@@ -62,7 +55,7 @@
                 "customizer",
                 "wordpress"
             ],
-            "time": "2018-05-17T17:26:03+00:00"
+            "time": "2019-06-01T07:57:05+00:00"
         }
     ],
     "packages-dev": [],
