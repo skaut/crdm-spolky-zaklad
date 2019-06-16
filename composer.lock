@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aristath/kirki",
-            "version": "v3.0.41",
+            "version": "v3.0.42",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aristath/kirki.git",
-                "reference": "f543c5f4c68b384152c24c4b33188e4a68facc64"
+                "reference": "2398aeeed89055fc0a8e7fb8e6e5df648af00b20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aristath/kirki/zipball/f543c5f4c68b384152c24c4b33188e4a68facc64",
-                "reference": "f543c5f4c68b384152c24c4b33188e4a68facc64",
+                "url": "https://api.github.com/repos/aristath/kirki/zipball/2398aeeed89055fc0a8e7fb8e6e5df648af00b20",
+                "reference": "2398aeeed89055fc0a8e7fb8e6e5df648af00b20",
                 "shasum": ""
             },
             "require": {
@@ -55,7 +55,7 @@
                 "customizer",
                 "wordpress"
             ],
-            "time": "2019-06-08T12:10:59+00:00"
+            "time": "2019-06-16T07:27:29+00:00"
         }
     ],
     "packages-dev": [],
