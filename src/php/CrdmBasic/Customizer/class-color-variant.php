@@ -91,43 +91,6 @@ class Color_Variant {
 				'preset'      => array(
 					'light' => array(
 						'settings' => array(
-							'webBg'                 => array(
-								'background-color' => 'rgba(255, 255, 255, 0)',
-								'background-image' => CRDMBASIC_TEMPLATE_URL . 'frontend/light_background.png',
-							),
-							'headerBg1'             => array(
-								'background-color'      => 'rgba(255, 255, 255, 0)',
-								'background-image'      => CRDMBASIC_TEMPLATE_URL . 'frontend/light_header_background.png',
-								'background-repeat'     => 'no-repeat',
-								'background-position'   => 'right top',
-								'background-size'       => '376px auto',
-								'background-attachment' => 'scroll',
-							),
-							'headerBg2'             => array(
-								'background-color'      => 'rgba(255, 255, 255, 0)',
-								'background-image'      => CRDMBASIC_TEMPLATE_URL . 'frontend/light_header_foreground.png',
-								'background-repeat'     => 'no-repeat',
-								'background-position'   => 'right bottom',
-								'background-size'       => '100% auto',
-								'background-attachment' => 'scroll',
-							),
-							'headerBg3'             => array(
-								'background-color'      => 'rgba(255, 255, 255, 0)',
-								'background-image'      => CRDMBASIC_TEMPLATE_URL . 'frontend/light_grass.png',
-								'background-repeat'     => 'repeat-x',
-								'background-position'   => 'left bottom',
-								'background-size'       => 'auto 100%',
-								'background-attachment' => 'scroll',
-							),
-							'borderRadius'          => '0px',
-							'menuBg'                => array(
-								'background-color' => '#037b8c',
-								'background-image' => '',
-							),
-							'menuFont'              => array(
-								'font-family' => 'Patrick Hand',
-								'color'       => '#efefe5',
-							),
 							'menuSeparatorColor'    => '#3b969f',
 							'submenuBg'             => array(
 								'background-color' => '#65c3d4',
@@ -138,18 +101,6 @@ class Color_Variant {
 								'color'       => '#ffffff',
 							),
 							'submenuSeparatorColor' => '#ffffff',
-							'contentFont'           => array(
-								'font-family' => 'PT Sans',
-								'color'       => '#3f3f3f',
-							),
-							'contentH1Font'         => array(
-								'font-family' => 'PT Sans',
-								'color'       => '#037b8c',
-							),
-							'contentH2Font'         => array(
-								'font-family' => 'PT Sans',
-								'color'       => '#037b8c',
-							),
 							'contentH3Font'         => array(
 								'font-family' => 'PT Sans',
 								'color'       => '#00011f',
@@ -173,39 +124,6 @@ class Color_Variant {
 					),
 					'dark'  => array(
 						'settings' => array(
-							'webBg'                 => array(
-								'background-color' => '#0f2b4a',
-								'background-image' => '',
-							),
-							'headerBg1'             => array(
-								'background-color' => 'rgba(255, 255, 255, 0)',
-								'background-image' => '',
-							),
-							'headerBg2'             => array(
-								'background-color'      => 'rgba(255, 255, 255, 0)',
-								'background-image'      => CRDMBASIC_TEMPLATE_URL . 'frontend/dark_header_foreground.png',
-								'background-repeat'     => 'no-repeat',
-								'background-position'   => 'right bottom',
-								'background-size'       => '87% auto',
-								'background-attachment' => 'scroll',
-							),
-							'headerBg3'             => array(
-								'background-color'      => 'rgba(255, 255, 255, 0)',
-								'background-image'      => CRDMBASIC_TEMPLATE_URL . 'frontend/dark_pavement.png',
-								'background-repeat'     => 'repeat-x',
-								'background-position'   => 'left bottom',
-								'background-size'       => '24px 10px',
-								'background-attachment' => 'scroll',
-							),
-							'borderRadius'          => '0.5em',
-							'menuBg'                => array(
-								'background-color' => '#122030',
-								'background-image' => '',
-							),
-							'menuFont'              => array(
-								'font-family' => 'Patrick Hand',
-								'color'       => '#f2efde',
-							),
 							'menuSeparatorColor'    => '#465058',
 							'submenuBg'             => array(
 								'background-color' => '#122030',
@@ -216,18 +134,6 @@ class Color_Variant {
 								'color'       => '#5aa4cc',
 							),
 							'submenuSeparatorColor' => '#0f2b4a',
-							'contentFont'           => array(
-								'font-family' => 'PT Sans',
-								'color'       => '#ebebeb',
-							),
-							'contentH1Font'         => array(
-								'font-family' => 'PT Sans',
-								'color'       => '#7adff1',
-							),
-							'contentH2Font'         => array(
-								'font-family' => 'PT Sans',
-								'color'       => '#7adff1',
-							),
 							'contentH3Font'         => array(
 								'font-family' => 'PT Sans',
 								'color'       => '#ebebeb',

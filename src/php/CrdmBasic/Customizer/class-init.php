@@ -66,9 +66,12 @@ class Init {
 	 * Adds all the sections and their controls to the panel.
 	 */
 	protected function init_sections_and_controls() {
+		( new Preset() );
+		( new Border_Radius() );
+		( new Colors() );
+		( new Typography() );
+		( new Background() );
 		( new Color_Variant( self::CONFIG_ID, self::CONFIG_ID . '_theme' ) );
-		( new Background( self::CONFIG_ID, self::CONFIG_ID . '_theme' ) );
-		( new Border_Radius( self::CONFIG_ID, self::CONFIG_ID . '_theme' ) );
 		( new Menu( self::CONFIG_ID, self::CONFIG_ID . '_theme' ) );
 		( new Sidebar( self::CONFIG_ID, self::CONFIG_ID . '_theme' ) );
 		( new Page_Header( self::CONFIG_ID, self::CONFIG_ID . '_theme' ) );
@@ -76,4 +79,29 @@ class Init {
 		( new Footer( self::CONFIG_ID, self::CONFIG_ID . '_theme' ) );
 	}
 
+	/**
+	 * Checks for a GeneratePress module
+	 *
+	 * Checks whether GeneratePress premium is installed and a module is enabled.
+	 *
+	 * @param string $module The name of the module.
+	 *
+	 * $return bool Whether the module is enabled.
+	 */
+	public static function generatepress_module_enabled( $module ) {
+		if ( ! function_exists( 'generatepress_is_module_active' ) ) {
+			return false;
+		}
+		switch ( $module ) {
+			case 'generate_package_backgrounds':
+				$definition = 'GENERATE_BACKGROUNDS';
+				break;
+			case 'generate_package_colors':
+				$definition = 'GENERATE_COLORS';
+				break;
+			default:
+				return false;
+		}
+		return generatepress_is_module_active( $module, $definition );
+	}
 }

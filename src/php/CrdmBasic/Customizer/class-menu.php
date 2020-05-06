@@ -78,60 +78,6 @@ class Menu {
 		Kirki::add_field(
 			$this->config_id,
 			array(
-				'type'      => 'background',
-				'settings'  => 'menuBg',
-				'label'     => esc_attr__( 'Menu background', 'crdm-basic' ),
-				'section'   => $this->section_id,
-				'default'   => array(
-					'background-color'      => '#037b8c',
-					'background-image'      => '',
-					'background-repeat'     => 'repeat',
-					'background-position'   => 'center center',
-					'background-size'       => 'cover',
-					'background-attachment' => 'scroll',
-				),
-				'output'    => array(
-					array(
-						'element' => '.main-navigation, .main-navigation .main-nav ul li[class*="current-menu-"] > a, .main-navigation .main-nav ul li[class*="current-menu-"] > a:hover, .main-navigation .main-nav ul li[class*="current-menu-"].sfHover > a',
-					),
-				),
-				'transport' => 'auto',
-			)
-		);
-
-		Kirki::add_field(
-			$this->config_id,
-			array(
-				'type'      => 'typography',
-				'settings'  => 'menuFont',
-				'label'     => esc_attr__( 'Menu items', 'crdm-basic' ),
-				'section'   => $this->section_id,
-				'default'   => array(
-					'font-family'    => 'Patrick Hand',
-					'variant'        => 'regular',
-					'font-size'      => '16px',
-					'line-height'    => '37px',
-					'letter-spacing' => 'inherit',
-					'color'          => '#efefe5',
-					'text-transform' => 'none',
-				),
-				'output'    => array(
-					array(
-						'element' => '.main-navigation .main-nav > ul > li > a, .main-navigation .main-nav ul li[class*="current-menu-"] > a, .main-navigation .main-nav ul li[class*="current-menu-"] > a:hover, .main-navigation .main-nav ul li[class*="current-menu-"].sfHover > a',
-					),
-					array(
-						'choice'   => 'color',
-						'element'  => '.dropdown-menu-toggle:before',
-						'property' => 'color',
-					),
-				),
-				'transport' => 'auto',
-			)
-		);
-
-		Kirki::add_field(
-			$this->config_id,
-			array(
 				'type'      => 'color',
 				'settings'  => 'menuSeparatorColor',
 				'label'     => esc_attr__( 'Menu item separator color', 'crdm-basic' ),

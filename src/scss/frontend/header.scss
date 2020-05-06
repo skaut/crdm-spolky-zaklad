@@ -16,6 +16,9 @@
 	width: 100%;
 	height: 216px;
 	z-index: -1;
+	background-repeat: no-repeat;
+	background-size: auto 215px;
+	background-position: right top;
 
 	@media (max-width: 768px) {
 		display: none;
@@ -32,6 +35,9 @@
 		width: 340px;
 		height: 205px;
 		z-index: 1;
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: right top;
 
 		@media (max-width: 768px) {
 			display: none;
@@ -47,6 +53,9 @@
 	right: 0;
 	width: 100%;
 	height: 28px;
+	background-repeat: repeat-x;
+	background-size: auto 100%;
+	background-position: left bottom;
 }
 
 .page-header-image.crdm_page-header {
@@ -61,7 +70,6 @@
 	min-width: 33%;
 	padding: 0.5em 1.2em;
 	background-color: rgba(196, 219, 122, 0.79);
-	border-radius: var(--main-border-radius);
 
 	h1 {
 		margin: 0 0 0.25em 0;

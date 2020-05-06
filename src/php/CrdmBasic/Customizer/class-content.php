@@ -115,30 +115,6 @@ class Content {
 		Kirki::add_field(
 			$this->config_id,
 			array(
-				'type'      => 'typography',
-				'settings'  => 'contentFont',
-				'label'     => esc_attr__( 'Body', 'crdm-basic' ),
-				'section'   => $this->section_id,
-				'default'   => array(
-					'font-family'    => 'PT Sans',
-					'variant'        => 'regular',
-					'font-size'      => '17px',
-					'line-height'    => '1.4',
-					'letter-spacing' => 'inherit',
-					'color'          => '#3f3f3f',
-				),
-				'output'    => array(
-					array(
-						'element' => 'body .site-main',
-					),
-				),
-				'transport' => 'auto',
-			)
-		);
-
-		Kirki::add_field(
-			$this->config_id,
-			array(
 				'type'      => 'color',
 				'settings'  => 'contentLinksColor',
 				'label'     => esc_attr__( 'Link color', 'crdm-basic' ),
@@ -148,57 +124,6 @@ class Content {
 					array(
 						'element'  => 'body .site-main a, body .site-main a:visited, body .site-main a:hover',
 						'property' => 'color',
-					),
-				),
-				'transport' => 'auto',
-			)
-		);
-
-		Kirki::add_field(
-			$this->config_id,
-			array(
-				'type'        => 'typography',
-				'settings'    => 'contentH1Font',
-				'label'       => esc_attr__( 'Heading 1 (H1)', 'crdm-basic' ),
-				'description' => esc_attr__( 'The color will be used for other elements (lists, tables etc.) as well.', 'crdm-basic' ),
-				'section'     => $this->section_id,
-				'default'     => array(
-					'font-family'    => 'PT Sans',
-					'variant'        => '700',
-					'font-size'      => '2.3em',
-					'line-height'    => '1.15',
-					'letter-spacing' => 'inherit',
-					'color'          => '#037b8c',
-					'text-transform' => 'none',
-				),
-				'output'      => array(
-					array(
-						'element' => 'body .site-main h1',
-					),
-				),
-				'transport'   => 'auto',
-			)
-		);
-
-		Kirki::add_field(
-			$this->config_id,
-			array(
-				'type'      => 'typography',
-				'settings'  => 'contentH2Font',
-				'label'     => esc_attr__( 'Heading 2 (H2)', 'crdm-basic' ),
-				'section'   => $this->section_id,
-				'default'   => array(
-					'font-family'    => 'PT Sans',
-					'variant'        => 'regular',
-					'font-size'      => '2.2em',
-					'line-height'    => '1.2',
-					'letter-spacing' => 'inherit',
-					'color'          => '#037b8c',
-					'text-transform' => 'none',
-				),
-				'output'    => array(
-					array(
-						'element' => 'body .site-main h2',
 					),
 				),
 				'transport' => 'auto',
@@ -343,7 +268,7 @@ class Content {
 	private static function get_bg_color() {
 		$bg_color = get_theme_mod( 'contentBg' );
 		if ( empty( $bg_color ) || ! isset( $bg_color['background-color'] ) || substr( $bg_color['background-color'], 0, 1 ) !== '#' ) {
-			return get_theme_mod( 'webBg' );
+			return get_theme_mod( 'generate_settings[background_color]' );
 		}
 		return $bg_color;
 	}

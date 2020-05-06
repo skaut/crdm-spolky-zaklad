@@ -36,11 +36,14 @@ LiveReloadPlugin.prototype.done = function done(stats) {
 module.exports = {
     mode: 'production',
     entry: {
-        index: './src/js/frontend/index.js'
+        'frontend/index': './src/js/frontend/index.js',
+        'admin/preset_customize_control': './src/js/admin/preset_customize_control.js',
+        'admin/colors_live_preview': './src/js/admin/colors_live_preview.js',
+        'admin/typography_live_preview': './src/js/admin/typography_live_preview.js'
     },
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'dist/frontend')
+        path: path.resolve(__dirname, 'dist')
     },
     devtool: 'source-map',
     watchOptions: {
@@ -105,26 +108,30 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin({
-            verbose: true
+            verbose: true,
+            cleanStaleWebpackAssets: false
         }),
         new CopyWebpackPlugin([{
             from: './src/png/frontend',
-            to: './'
+            to: './frontend'
         },{
             from: './src/png/admin',
-            to: './../admin'
+            to: './admin'
         },{
             from: './src/php/functions.php',
-            to: './../'
+            to: './'
+        },{
+            from: './src/php/disable-gp-functions.php',
+            to: './'
         },{
             from: './src/php/CrdmBasic',
-            to: './../src/php/CrdmBasic'
+            to: './src/php/CrdmBasic'
         },{
             from: './src/assets',
-            to: './../'
+            to: './'
         },{
             from: './vendor',
-            to: './../vendor',
+            to: './vendor',
             ignore: ['**/\.*', '**/\.*/**/*'],
             transform(content, path) {
                 if (path.match(/\.(?:php|md)$/)) {
